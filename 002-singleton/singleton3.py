@@ -32,3 +32,4 @@ class MyClass(object):
 a = MyClass()
 b = MyClass()
 print(id(a), id(b))
+

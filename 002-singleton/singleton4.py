@@ -30,3 +30,4 @@ a = MyClass()
 b = MyClass()
 print(id(a), id(b))
 print(id(a.__dict__), id(b.__dict__))
+

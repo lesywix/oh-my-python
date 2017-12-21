@@ -22,3 +22,4 @@ class Singleton1(object):
 my_singleton = Singleton1()
 
 # 将上面代码保存为singleton1_def.py
+

@@ -1,8 +1,8 @@
 oh-my-python
 ============
-[![GitHub forks](https://img.shields.io/github/forks/weixianglin/oh-my-python.svg)](https://github.com/weixianglin/oh-my-python/network)
-[![GitHub stars](https://img.shields.io/github/stars/weixianglin/oh-my-python.svg)](https://github.com/weixianglin/oh-my-python/stargazers)
-[![GitHub license](https://img.shields.io/github/license/weixianglin/oh-my-python.svg)](https://github.com/weixianglin/oh-my-python/blob/master/LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/weixianglin/oh-my-python.svg)](https://github.com/lesywix/oh-my-python/network)
+[![GitHub stars](https://img.shields.io/github/stars/weixianglin/oh-my-python.svg)](https://github.com/lesywix/oh-my-python/stargazers)
+[![GitHub license](https://img.shields.io/github/license/weixianglin/oh-my-python.svg)](https://github.com/lesywix/oh-my-python/blob/master/LICENSE)
 
 《剑指offer》中的面试题的Python解决方案及总结，包含unittest单元测试；Python数据结构与算法等常见知识汇总。使用的Python版本为3.6。如有问题欢迎指出~
 
@@ -24,6 +24,7 @@ oh-my-python
 14. [二进制中一的个数](015-二进制中一的个数/)
     * [用一条语句判断一个整数是不是2的整数次方](015-二进制中一的个数/relevant1.py)
     * [判断两个数的二进制表示有多少位不一样](015-二进制中一的个数/relevant2.py)
+15. [数值的整数次方](016-数值的整数次方/power.py)
 
 
 ---

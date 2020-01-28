@@ -31,6 +31,7 @@ oh-my-python
     * [删除链表重复节点](018-删除链表节点/delete_duplicate_node.py)
 19. [正则表达式匹配](019-正则表达式匹配/re_fullmatch.py)
 20. [表示数值的字符串](020-表示数值的字符串/is_numeric.py)
+21. [021-使数组中奇数位于偶数前面](021-使数组中奇数位于偶数前面/resort.py)
 
 ---
 持续更新中...:snake:

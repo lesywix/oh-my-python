@@ -15,7 +15,7 @@ class ListNode(object):
         self.next = None
 
     def __repr__(self):
-        return f'<ListNode object val: {self.val} next_val: {self.next.val}>'
+        return f'<ListNode object val: {self.val} next_val: {getattr(self.next, "val", None)}>'
 
 
 def has_meeting_node(node):

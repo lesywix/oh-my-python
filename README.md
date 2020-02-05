@@ -35,3 +35,4 @@ oh-my-python
 22. [链表中倒数第 K 个节点](022-链表中倒数第k个节点/knode.py)
 23. [链表中环的入口节点](023-链表中环的入口节点/meeting_node.py)
 24. [反转链表](024-反转链表/reverse_node.py)
+25. [合并两个排序链表](025-合并两个排序的链表/merge_sorted_node.py)

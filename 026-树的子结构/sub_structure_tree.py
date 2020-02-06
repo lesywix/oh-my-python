@@ -18,8 +18,8 @@ class TreeNode(object):
 
 # 树的一些基本算法
 class BinaryTree(object):
-    def __init__(self):
-        self.tree = None
+    def __init__(self, tree=None):
+        self.tree = tree
 
     def construct_tree(self, l: TreeNode, d: TreeNode, r: TreeNode):
         if not self.tree:

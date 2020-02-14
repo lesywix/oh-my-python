@@ -40,3 +40,4 @@ oh-my-python
 27. [二叉树的镜像](027-二叉树的镜像/mirror_of_binary_tree.py)
 28. [对称的二叉树](028-对称的二叉树/is_symmetrical.py)
 29. [顺时针打印矩阵](029-顺时针打印矩阵/print_metrix.py)
+30. [包含 min 函数的栈](030-包含min函数的栈/min_stack.py)

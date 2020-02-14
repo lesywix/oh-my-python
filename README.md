@@ -41,3 +41,4 @@ oh-my-python
 28. [对称的二叉树](028-对称的二叉树/is_symmetrical.py)
 29. [顺时针打印矩阵](029-顺时针打印矩阵/print_metrix.py)
 30. [包含 min 函数的栈](030-包含min函数的栈/min_stack.py)
+31. [栈的压入弹出序列](031-栈的压入弹出序列/stack_pop_push_order.py)

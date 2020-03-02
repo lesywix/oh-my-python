@@ -36,6 +36,7 @@ def selection_sort(arr: list):
 
 
 def quick_sort1(arr: list):
+    # 需要复制切割原列表
     length = len(arr)
     res = arr[:]
     if length <= 1:
@@ -45,6 +46,37 @@ def quick_sort1(arr: list):
     middle = [i for i in res if i == pivot]
     right = [i for i in res if i > pivot]
     return quick_sort1(left) + middle + quick_sort1(right)
+
+
+def partition(array, start, end):
+    pivot_idx = start
+    for i in range(start + 1, end + 1):
+        # 一次循环完成定位 pivot 和交换元素
+        # print(f'#1: array_i[{i}]: {array[i]}, '
+        #       f'array_start[{start}]: {array[start]}, arr: {array}, '
+        #       f'pivot: {pivot_idx}, start: {start}, end: {end}')
+        if array[i] <= array[start]:
+            pivot_idx += 1
+            array[i], array[pivot_idx] = array[pivot_idx], array[i]
+    array[pivot_idx], array[start] = array[start], array[pivot_idx]
+    return pivot_idx
+
+
+def quick_sort2_recurse(arr, start, end):
+    if start < end:
+        pivot_id = partition(arr, start, end)
+        quick_sort2_recurse(arr, start, pivot_id - 1)
+        quick_sort2_recurse(arr, pivot_id + 1, end)
+
+
+def quick_sort2(arr: list, start=0, end=None):
+    # 通过 index 在原列表的移动实现，不需要复制切割原列表
+    length = len(arr)
+    if end is None:
+        end = length - 1
+    r = arr[:]
+    quick_sort2_recurse(r, start, end)
+    return r
 
 
 class Test(unittest.TestCase):
@@ -58,6 +90,5 @@ class Test(unittest.TestCase):
             [1, 1, 1]
         ]
         for a in arr:
-            for fun in [bubble_sort, selection_sort, quick_sort1]:
+            for fun in [bubble_sort, selection_sort, quick_sort1, quick_sort2]:
                 self.assertEqual(sorted(a), fun(a))
-            # self.assertEqual(sorted(a), quick_sort1(a))

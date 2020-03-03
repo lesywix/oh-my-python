@@ -79,6 +79,40 @@ def quick_sort2(arr: list, start=0, end=None):
     return r
 
 
+def heap_sort(arr):
+    def sift_down(start, end):
+        root = start
+        while True:
+            # left child
+            child = root * 2 + 1
+            if child > end:
+                break
+            # find the max value of child
+            if child + 1 <= end and res[child] < res[child + 1]:
+                child += 1
+            if res[root] < res[child]:
+                res[root], res[child] = res[child], res[root]
+                # 递归子节点
+                root = child
+            else:
+                break
+
+    length = len(arr)
+    res = arr[:]
+    if length <= 1:
+        return res
+    # 构造最大堆，(length // 2) - 1 代表最后一个非子节点的节点坐标
+    for i in range((length // 2) - 1, -1, -1):
+        sift_down(i, length - 1)
+
+    # 堆排序（将 root 与最后的子节点交换，继续构造，最后可得到升序队列）
+    for i in range(length - 1, 0, -1):
+        res[0], res[i] = res[i], res[0]
+        sift_down(0, i - 1)
+
+    return res
+
+
 class Test(unittest.TestCase):
     def test(self):
         arr = [
@@ -90,5 +124,6 @@ class Test(unittest.TestCase):
             [1, 1, 1]
         ]
         for a in arr:
-            for fun in [bubble_sort, selection_sort, quick_sort1, quick_sort2]:
+            for fun in [bubble_sort, selection_sort, quick_sort1, quick_sort2, heap_sort]:
                 self.assertEqual(sorted(a), fun(a))
+            # self.assertEqual(sorted(a), heap_sort(a))

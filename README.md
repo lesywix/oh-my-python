@@ -45,3 +45,4 @@ oh-my-python
 
 ## 常见算法
 - [排序算法集合](sort.py)
+- [二分查找](binary_search.py)

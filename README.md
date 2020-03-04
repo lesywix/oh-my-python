@@ -35,6 +35,7 @@ oh-my-python
 22. [链表中倒数第 K 个节点](target_offer/022-链表中倒数第k个节点/knode.py)
 23. [链表中环的入口节点](target_offer/023-链表中环的入口节点/meeting_node.py)
 24. [反转链表](target_offer/024-反转链表/reverse_node.py)
+    * [链表成对反转](target_offer/024-反转链表/reverse_node2.py)
 25. [合并两个排序链表](target_offer/025-合并两个排序的链表/merge_sorted_node.py)
 26. [树的子结构](target_offer/026-树的子结构/sub_structure_tree.py)
 27. [二叉树的镜像](target_offer/027-二叉树的镜像/mirror_of_binary_tree.py)

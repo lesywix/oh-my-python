@@ -32,6 +32,17 @@ def reverse_node(node):
     return node
 
 
+def reverse_node2(head):
+    q = head.next
+    head.next = None
+    while q:
+        r = q.next
+        q.next = head
+        head = q
+        q = r
+    return head
+
+
 class Test(unittest.TestCase):
     def test(self):
         node1 = ListNode(1)

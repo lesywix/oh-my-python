@@ -48,3 +48,4 @@ oh-my-python
 - [排序算法集合](sort.py)
 - [二分查找](binary_search.py)
 - [二叉树遍历](binary_tree.py)
+- [合并两个有序列表](merge_list.py)

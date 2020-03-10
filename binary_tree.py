@@ -57,3 +57,20 @@ def bfs(root: TreeNode):
             queue.append(node.left)
             queue.append(node.right)
     return r
+
+
+def max_depth(root: TreeNode):
+    # 求二叉树深度
+    if not root:
+        return 0
+    return max(max_depth(root.left), max_depth(root.right)) + 1
+
+
+def is_same_tree(p, q):
+    # 两树是否相同
+    if p is None and q is None:
+        return True
+    elif p and q:
+        return p.val == q.val and is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+    else:
+        return False

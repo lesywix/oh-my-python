@@ -29,12 +29,21 @@ class MyClass2(Singleton):
     b = 2
 
 
-# test
-a = MyClass()
-b = MyClass()
-c = MyClass2()
-d = MyClass2()
-print(id(a), id(b), id(c), id(d))
+class MyClass4(MyClass):
+    """如果继续继承，仍然会去调用原始父类 Singleton 的 __new__ 方法"""
 
-a.a = 3
-print(a.a, b.a)
+
+if __name__ == '__main__':
+    # test
+    a = MyClass()
+    b = MyClass()
+    c = MyClass2()
+    d = MyClass2()
+    print(id(a), id(b), id(c), id(d))
+
+    a.a = 3
+    print(a.a, b.a)
+
+    t = MyClass4()
+    tt = MyClass4()
+    print(id(t), id(tt))

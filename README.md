@@ -8,7 +8,7 @@ oh-my-python
 
 # 目录
 ## 剑指offer题解
-1. [Python实现单例模式](target_offer/002-singleton/)
+1. [Python实现单例模式](target_offer/singleton/)
 2. [找出数组中重复的数字](target_offer/003-数组中重复的数字/)
 3. [二维数组中查找](target_offer/004-二维数组中查找/)
 4. [替换空格](target_offer/005-替换空格/)

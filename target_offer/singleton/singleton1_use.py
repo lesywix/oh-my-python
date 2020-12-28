@@ -6,9 +6,7 @@
 
 # 使用singleton1
 
-import sys
-sys.path.append(r'f:\work2\leetcode\coding interviews\002-singleton\singleton1_def.py')
 
-from singleton1_def import my_singleton
+from target_offer.singleton.singleton1_def import my_singleton
 
 my_singleton.foo()

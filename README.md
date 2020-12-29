@@ -43,6 +43,7 @@ oh-my-python
 29. [顺时针打印矩阵](target_offer/029-顺时针打印矩阵/print_metrix.py)
 30. [包含 min 函数的栈](target_offer/030-包含min函数的栈/min_stack.py)
 31. [栈的压入弹出序列](target_offer/031-栈的压入弹出序列/stack_pop_push_order.py)
+32. [从上到下打印二叉树](target_offer/032_print_tree.py)
 
 ## 常见算法
 - [排序算法集合](sort.py)

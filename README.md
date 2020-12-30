@@ -44,6 +44,7 @@ oh-my-python
 30. [包含 min 函数的栈](target_offer/030-包含min函数的栈/min_stack.py)
 31. [栈的压入弹出序列](target_offer/031-栈的压入弹出序列/stack_pop_push_order.py)
 32. [从上到下打印二叉树](target_offer/032_print_tree.py)
+33. [二叉搜索树的后序遍历](target_offer/033_squence_bst.py)
 
 ## 常见算法
 - [排序算法集合](sort.py)

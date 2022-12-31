@@ -4,19 +4,34 @@
 """
 import unittest
 
+#fix the bug in your code
 
-def resort(s):
-    return list(filter(is_odd, s)) + list(filter(is_even, s))
+class Solution:
+    """
+    @param: nums: an array of integers
+    @return: nothing
+    """
+    def reorder_odd_even(self, nums):
+        if not isinstance(nums, list) or len(nums) == 0:
+            return
+        begin = 0
+        end = len(nums) - 1
+        while begin < end:
+            while begin < end and (nums[begin] & 0x1) ==1:
+                begin += 1
+            while begin < end and (nums[end] & 0x1) == 0:
+                end -= 1
+            if begin < end:
+                nums[begin], nums[end] = nums[end], nums[begin]
+                begin += 1
+        return nums
 
-
-def is_even(n):
-    return n & 1 == 0
-
-
-def is_odd(n):
-    return n & 1 == 1
+s = Solution()
+print(s.reorder_odd_even([1,2,3,4,5]))
 
 
 class Test(unittest.TestCase):
     def test(self):
-        self.assertEqual([1, 3, 2, 4], resort([1, 2, 3, 4]))
+        self.assertEqual([1, 3, 2, 4],Solution().reorder_odd_even([1,2,3,4]))
+
+Test().test()
